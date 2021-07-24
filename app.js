@@ -5,9 +5,7 @@ submitButton.addEventListener("click", getReqDate);
 
 function getReqDate(event) {
     if (++this.clickCount === 2) {
-
         location.reload();
-
     }
     const reqTime = dateInput.value;
     const reqTimeDate = new Date(reqTime);
