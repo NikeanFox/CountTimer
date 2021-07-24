@@ -1,9 +1,14 @@
 const dateInput = document.querySelector('.date-box');
 const submitButton = document.querySelector('.sub-but');
-
+submitButton.clickCount = 0;
 submitButton.addEventListener("click", getReqDate);
 
 function getReqDate(event) {
+    if (++this.clickCount === 2) {
+
+        location.reload();
+
+    }
     const reqTime = dateInput.value;
     const reqTimeDate = new Date(reqTime);
     const currentDate = new Date();
@@ -11,8 +16,6 @@ function getReqDate(event) {
         alert("Enter A Future Date");
         location.reload();
     }
-    console.log(days);
-
 
     function countdown() {
         window.scroll({ bottom: 0, behavior: 'smooth' })
