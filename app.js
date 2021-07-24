@@ -15,7 +15,7 @@ function getReqDate(event) {
     const reqTimeDate = new Date(reqTime);
     const currentDate = new Date();
     if (isNaN(reqTimeDate)) {
-        alert("Enter The Date Like In Example!");
+        alert("Enter The Date Like In Example");
         location.reload();
     }
     if (reqTimeDate < currentDate) {
