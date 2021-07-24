@@ -24,7 +24,6 @@ function getReqDate(event) {
     }
 
     function countdown() {
-        window.scroll({ bottom: 0, behavior: 'smooth' })
 
         const heading = document.querySelector('.heading');
         const daysItem = document.getElementById('big-text-day');
