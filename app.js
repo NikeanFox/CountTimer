@@ -8,10 +8,18 @@ function getReqDate(event) {
         location.reload();
     }
     const reqTime = dateInput.value;
+    if (reqTime == '') {
+        alert("Enter A Date!");
+        location.reload();
+    }
     const reqTimeDate = new Date(reqTime);
     const currentDate = new Date();
+    if (isNaN(reqTimeDate)) {
+        alert("Enter The Date Like In Example!");
+        location.reload();
+    }
     if (reqTimeDate < currentDate) {
-        alert("Enter A Future Date");
+        alert("Enter A Future Date!");
         location.reload();
     }
 
@@ -19,9 +27,6 @@ function getReqDate(event) {
         window.scroll({ bottom: 0, behavior: 'smooth' })
 
         const heading = document.querySelector('.heading');
-        const reqTimeDate = new Date(reqTime);
-        const currentDate = new Date();
-
         const daysItem = document.getElementById('big-text-day');
         const hoursItem = document.getElementById('big-text-hour');
         const minutesItem = document.getElementById('big-text-minute');
