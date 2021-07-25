@@ -24,7 +24,7 @@ function getReqDate(event) {
     }
 
     function countdown() {
-
+        const currentDate = new Date();
         const heading = document.querySelector('.heading');
         const daysItem = document.getElementById('big-text-day');
         const hoursItem = document.getElementById('big-text-hour');
@@ -44,8 +44,8 @@ function getReqDate(event) {
         minutesItem.innerHTML = mins;
         secondsItem.innerHTML = seconds;
         heading.innerHTML = "Time Until " + reqTime;
-
+        console.log(currentDate);
     }
-    setInterval(countdown, 1000)
+    setInterval(countdown, 1000);
 
 }
