@@ -6,6 +6,12 @@
           box-sizing: border-box;
 }
 
+body {
+  background-image: url(https://images.pexels.com/photos/773953/pexels-photo-773953.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260);
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
 .put-date {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -22,6 +28,13 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+}
+
+.put-date .page-head {
+  font-family: 'Dancing Script', cursive;
+  padding-bottom: 2rem;
+  font-size: 3rem;
+  text-align: center;
 }
 
 .put-date .date-box {
