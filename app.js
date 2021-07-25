@@ -47,4 +47,5 @@ function getReqDate(event) {
 
     }
     setInterval(countdown, 1000)
+
 }
