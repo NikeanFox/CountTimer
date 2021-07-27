@@ -13,7 +13,7 @@ function getReqDate(event) {
         location.reload();
     }
     const reqTimeDate = new Date(reqTime);
-    const currentDate = new Date();
+    let currentDate = new Date();
     if (isNaN(reqTimeDate)) {
         alert("Enter The Date Like In Example");
         location.reload();
@@ -24,7 +24,7 @@ function getReqDate(event) {
     }
 
     function countdown() {
-        const currentDate = new Date();
+        currentDate = new Date();
         const heading = document.querySelector('.heading');
         const daysItem = document.getElementById('big-text-day');
         const hoursItem = document.getElementById('big-text-hour');
